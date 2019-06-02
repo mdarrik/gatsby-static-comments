@@ -8,7 +8,10 @@ const CommentBox = () => {
 
     return (
         <form className="comment-form" onSubmit={submitComment}>
+            <label>
+                Add a new comment
             <textarea class="comment-input"></textarea>
+            </label>
             <div class="comment-footer">
                 <button type="submit">Add Comment</button>
             </div>
