@@ -1,4 +1,5 @@
 import React from "react"
+import CommentSection from '../components/comment-section'
 
 export default () => {
   return (
@@ -11,6 +12,7 @@ export default () => {
         Uses Azure Webhooks to trigger new Gatsby builds when comments are submitted.
       </p>
       </section>
+      <CommentSection />
     </main>
   )
 }
