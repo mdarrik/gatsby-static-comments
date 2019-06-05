@@ -10,9 +10,9 @@ const CommentBox = () => {
         <form className="comment-form" onSubmit={submitComment}>
             <label>
                 Add a new comment
-            <textarea class="comment-input"></textarea>
+        <textarea className="comment-input" />
             </label>
-            <div class="comment-footer">
+      <div className="comment-footer">
                 <button type="submit">Add Comment</button>
             </div>
         </form>
