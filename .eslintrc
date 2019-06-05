@@ -1,17 +1,17 @@
 {
-    "plugins": [
-        "react-hooks"
-    ],
-    "rules": {
-        "react-hooks/rules-of-hooks": "error",
-        "react-hooks/exhaustive-deps": "warn",
-        "no-extra-semi": "warn",
-        "comma-dangle": ["warn", "only-multiline"]
+  "extends": ["react-app", "plugin:jsx-a11y/recommended"],
+  "plugins": ["react-hooks", "jsx-a11y", "react"],
+  "rules": {
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "no-extra-semi": "warn",
+    "comma-dangle": ["warn", "only-multiline"],
+    "react/no-unknown-property": "error"
+  },
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
     },
-    "parserOptions": {
-        "ecmaFeatures": {
-            "jsx": true
-        },
-        "sourceType": "module"
-    }
+    "sourceType": "module"
+  }
 }
