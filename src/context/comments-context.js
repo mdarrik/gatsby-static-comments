@@ -1,3 +1,3 @@
 import { createContext } from 'react'
-
-export default createContext()
+    //TODO: Replace temporary fix with full work around
+export default createContext({comments: [], addCommentToComments: () => {}, setComments: () => {} })
