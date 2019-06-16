@@ -1,5 +1,5 @@
 {
-  "name": "submit-static-comment",
+  "name": "submission-created",
   "version": "0.0.1",
   "description": "A Netlify Function to save comments to a static site.",
   "repository": {
