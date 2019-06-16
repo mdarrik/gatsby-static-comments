@@ -10,12 +10,14 @@ const NewCommentBox = () => {
       author: authorField,
       "form-name": formNameField,
       "comment-text": commentTextField,
+      "humans-ignore": humansIgnoreField,
     } = event.target.elements
 
     const formData = {
       author: authorField.value,
       "form-name": formNameField.value,
       "comment-text": commentTextField.value,
+      "humans-ignore": humansIgnoreField.value,
     }
 
     fetch("/", {
@@ -35,7 +37,12 @@ const NewCommentBox = () => {
       className="comment-form"
       onSubmit={submitComment}
       data-netlify="true"
+      netlify-honeypot="humans-ignore"
     >
+      <label style={{display: 'none'}} >
+        Do Not Fill this Out.
+        <input name="humans-ignore"/>
+      </label>
       <input type="hidden" value="comment" name="form-name" />
       <label>
         Add a new comment
