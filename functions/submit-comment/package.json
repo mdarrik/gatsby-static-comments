@@ -1,0 +1,23 @@
+{
+  "name": "submit-static-comment",
+  "version": "0.0.1",
+  "description": "A Netlify Function to save comments to a static site.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mdarrik/gatsby-static-comments.git"
+  },
+  "main": "submission-created.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "netlify",
+    "serverless",
+    "apis",
+    "url",
+    "js"
+  ],
+  "author": "Darrik Moberg",
+  "license": "MIT",
+  "dependencies": {}
+}
